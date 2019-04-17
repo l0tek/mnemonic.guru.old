@@ -1,0 +1,22 @@
+canvas {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: fixed;
+  height: 100vh;
+  min-height: 350px;
+}
+
+.navbar-brand {
+	font-family: 'Coda', cursive;
+}
+
