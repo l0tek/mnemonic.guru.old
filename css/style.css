@@ -17,6 +17,7 @@ canvas {
 }
 
 .navbar-brand {
-	font-family: 'Coda', cursive;
+  font-family: 'Coda', cursive;
+  color: #33CCFF !important;
 }
 
