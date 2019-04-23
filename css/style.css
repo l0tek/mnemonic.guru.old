@@ -1,11 +1,16 @@
+#main {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+  background-image: url("../img/galaxy-3608029_1920.jpg");   
+  z-index: 100;  
+}
+
+
 canvas {
     height: 100vh;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
   }
 
 /* ---- particles.js container ---- */
