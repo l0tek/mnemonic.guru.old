@@ -19,23 +19,20 @@ $(document).ready(function(){
     });
 
     length=1;
-    $("#input").focusin(function (evt) {
+    $("#mac").focusin(function (evt) {
        
         $(this).keypress(function () {
             content=$(this).val();
             content1 = content.replace(/\:/g, '');
             length=content1.length;
             if(((length % 2) == 0) && length < 10 && length > 1){
-                $('#input').val($('#input').val() + ':');
+                $('#mac').val($('#mac').val() + ':');
                 }
     
         });
     
     });
-
-
 });
-
 
 /**
  * Get the user IP throught the webkitRTCPeerConnection
@@ -78,5 +75,17 @@ function getUserIP(onNewIP) { //  onNewIp - your listener function for new IPs
     };
 }
 
-
+$("#mac_btn").click(function() {
+    var mac_adress = 'FC:FB:FB:01:FA:21'
+    $.ajax({
+      xhrFields: {
+          withCredentials: true
+      },
+      crossDomain: true,
+      type: "GET",
+      url: "https://api.macvendors.com/"
+  }).done(function (data) {
+      console.log(data);
+  });
+});
 
