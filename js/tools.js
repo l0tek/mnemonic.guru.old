@@ -81,9 +81,12 @@ $("#mac_btn").click(function() {
       xhrFields: {
           withCredentials: true
       },
+     headers: {
+        "Access-Control-Allow-Origin":"*"
+      },      
       crossDomain: true,
       type: "GET",
-      url: "https://api.macvendors.com/"
+      url: "https://api.macvendors.com/" + mac_adress,
   }).done(function (data) {
       console.log(data);
   });
